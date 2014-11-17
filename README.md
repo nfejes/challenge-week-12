@@ -130,8 +130,30 @@ our results.
 
 ## Challenge 6 [BONUS]
 
-[Code]
-[Answer]
+[extra.py](extra/extra.py)
+```
+> python extra.py 
+(of,the): 189
+(it,was): 137
+(in,the): 122
+(and,the): 121
+(on,the): 96
+(this,place): 92
+(for,a): 86
+(for,the): 76
+(i,was): 75
+(and,i): 70
+(to,the): 65
+(the,food): 63
+(is,a): 61
+(at,the): 61
+(i,had): 57
+(it,is): 55
+(i,have): 55
+(with,the): 53
+(was,a): 52
+(to,be): 51
+```
 
 
 
