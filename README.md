@@ -47,27 +47,38 @@
 
 ## Challenge 1
 
-[Screenshot your query and a result]
+![screenshot](screenshots/yelpweather/challenge1.png)
+
+```
+> madisonMatch = {station_name: {$regex : /MADISON/}, date: {$regex: /20100425/}}    
+> db.precipitation.aggregate([{$match: madisonMatch}, {$group:{_id:"madison",total: {$sum:"$hpcp"}}}])    
+{ "_id" : "madison", "total" : 62 }
+```
 
 ## Challenge 2
 
-[Query snippet]
-[Answer]
+![screenshot](screenshots/yelpweather/challenge2.png)
 
-## Challenge 3
+```
+> lasVegasMatch = {station_name: {$regex : /VEGAS/}, date: {$regex: /20100425/}}
+> db.normals.aggregate([{$match: lasVegasMatch}, {$group:{_id:"lasVegas",total: {$avg:"$data.wind_vctspd"}}}])
+{ "_id" : "lasVegas", "total" : 41.625 }
+```
 
-[Query snippet]
-[Answer]
+**Answer:** 4.1625 mp mphh
 
-## Challenge 4
+## Challenge 3 - 5
+```
+> db.business.aggregate([{$match: {city: {$in:['Madison','Las Vegas','Phoenix']}}},{$group:{_id:'$city', reviews:{$sum: '$review_count'}}}])    
+{ "_id" : "Las Vegas", "reviews" : 577550 }    
+{ "_id" : "Madison", "reviews" : 34410 }    
+{ "_id" : "Phoenix", "reviews" : 200089 }    
+```
 
-[Query snippet]
-[Answer]
+**Las Vegas:** 577550        
+**Madison:**   34410     
+**Phoenix:**   200089    
 
-## Challenge 5
-
-[Query snippet]
-[Answer]
 
 ## Challenge 6 [BONUS]
 
