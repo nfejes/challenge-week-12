@@ -21,6 +21,8 @@ are the most posted to, and if these varies over the time of day.
 
 The data could tell how wide vocabularies the Reddit user have, and at what time of day
 the community is most active.
+You can also learn what topics are the most discussed, and find out when some specific topic 
+got popular in the Reddit Community.
 
 ## Challenge 5
 
@@ -62,23 +64,32 @@ the community is most active.
 
 ## Challenge 6
 
-[What does this change about our analysis?]
+This would change the data set significantly, since its likely that some word are less
+common in posts with high votes. Also, the question in Challenge 5 would be 
+"Which two of the top 50 subreddits share the most common **top** commenters",
+since many commenters might not be in the data set.
+
+The number of comments in each subreddit may also be disproportionate to the actual number 
+of comments in the subreddit.
 
 ## Challenge 7
 
-[How would you change your conclusions?]
+The conclusions would be that the questions answered through the data set are not about
+the whole community, but rather the part of the community that has high votes.
 
 ## Challenge 8
 
-[Bias in answer]
+The data might be biased in that it is collected over limited period of time, about two weeks.
 
 ## Challenge 9
 
-[Other Biases]
+We don't know for sure if all comments during the period is included in the data set.
+
 
 ## Challenge 10
 
-[How may you try and prove the bias]
+Collect data over another period of time, run the queries on that data and compare to
+our results.
 
 # Yelp and Weather 
 

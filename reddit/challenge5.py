@@ -19,11 +19,7 @@ except IOError:
 	])['result']
 	subreddits = [str(x[u'_id']) for x in top50]
 	
-#	print json.dumps(top50)
-#	open('top50.json','w').write(json.dumps(top50))
-#	top50 = json.load(open('top50.json'))
-
-	print 'Aggregating commenteers...'
+	print 'Aggregating commenters...'
 	commenters = {}
 	for sr in subreddits:
 		print 'for ' + sr + '...'
@@ -31,7 +27,7 @@ except IOError:
 		commenters[sr] = c
 		print 'got %d commenters' % len(c)
 
-#	open('top50icomments.json','w').write(json.dumps(commenters))
+	open('top50icomments.json','w').write(json.dumps(commenters))
 	
 
 # Convert lists to sets
